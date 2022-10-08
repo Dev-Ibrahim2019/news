@@ -31,7 +31,9 @@
             </svg></div>
         <ul class="side-menu">
             @foreach ($items as $item)
-                <li class="side-item side-item-category">{{ $item['title'] }}</li>
+                @if (isset($item['title']))
+                    <li class="side-item side-item-category">{{ $item['title'] }}</li>
+                @endif
                 <li class="slide">
                     <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);"><i
                             class="{{ $item['icon'] }} side-menu__icon"></i><span

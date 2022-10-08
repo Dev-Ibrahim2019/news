@@ -2,25 +2,31 @@
 
 return [
     [
-        'icon' => 'fa fa-home',
         'title' => 'Dashboard',
+        'icon' => 'fa fa-home',
         'main-title' => 'Home',
         // 'list' => ['Index'],
         'route' => ['dashboard.dashboard']
 
     ],
     [
-        'icon' => 'fa fa-th-list',
         'title' => 'Human Resources',
+        'icon' => 'fa fa-user',
+        'main-title' => 'Users',
+        'list' => ['Index', 'Create'],
+        'route' => ['dashboard.categories.index', 'dashboard.categories.create']
+    ],
+    [
+        'title' => 'Content Management',
+        'icon' => 'fa fa-th-list',
         'main-title' => 'Categories',
         'list' => ['Index', 'Create'],
         'route' => ['dashboard.categories.index', 'dashboard.categories.create']
     ],
     [
-        'icon' => 'fa fa-cog',
-        'title' => 'Setting',
-        'main-title' => 'Categories',
+        'icon' => 'fa fa-file',
+        'main-title' => 'News',
         'list' => ['Index', 'Create'],
-        'route' => ['dashboard.categories.index', 'dashboard.categories.create']
+        'route' => ['dashboard.news.index', 'dashboard.news.create']
     ],
 ];

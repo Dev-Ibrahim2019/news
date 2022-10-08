@@ -1,15 +1,15 @@
 @extends('layouts.dashboard')
-@section('title', 'Categories')
+@section('title', 'News')
 @section('breadcrumb')
     @parent
-    <span class="text-muted mt-1 tx-13 ms-2 mb-0">/ Category</span>
+    <span class="text-muted mt-1 tx-13 ms-2 mb-0">/ News</span>
 @endsection
 @section('content')
     <div class="row row-sm">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h3 class="card-title">Category List</h3>
+                    <h3 class="card-title">News List</h3>
                     <div class="d-flex">
                         <a class="btn btn-primary text-light mx-3" href="{{ route('dashboard.news.create') }}">Create
                             News</a>
