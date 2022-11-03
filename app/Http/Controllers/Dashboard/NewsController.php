@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use App\Models\TempNews;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Symfony\Component\HttpFoundation\Response;
 
 class NewsController extends Controller
 {
@@ -18,7 +21,8 @@ class NewsController extends Controller
      */
     public function index()
     {
-        $news = News::with('category')->filter(request()->query())->latest()->paginate();
+        $request = request();
+        $news = News::with('category')->filter($request->query())->latest()->get();
         return view('dashboard.news.index', compact('news'));
     }
 
@@ -29,7 +33,7 @@ class NewsController extends Controller
      */
     public function create(News $news)
     {
-        $category_news = News::where('category_id', 1)->with(['category']);
+        $category_news = News::with(['category']);
         $news = new News();
         return view('dashboard.news.create', compact('news', 'category_news'));
     }
@@ -42,11 +46,28 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->except('image');
+        $request->validate(News::rules());
+        $request->merge([
+            'slug' => Str::slug($request->post('title'))
+        ]);
+        // dd($request->post('news_images'));
+        $data = $request->except(['image', 'news_images']);
         $data['image'] = $this->uploadingImage($request);
+
+        $news = new News();
+        if ($request->hasFile('news_images')) {
+            foreach($request->file('news_images') as $file) {
+                $path = $file->storeAs('uploads/news', rand().'_'.time().'_'.$file->getClientOriginalName(), [
+                'disk' => 'public'
+                ]);
+                $news->images()->create([
+                    'news_images' => $path
+                ]);
+            }
+        }
         News::create($data);
         return Redirect::route('dashboard.news.index')->with([
-            'message' => 'News Created.',
+            'message' => 'News Created!',
             'type' => 'success'
         ]);
     }
@@ -83,13 +104,6 @@ class NewsController extends Controller
                 'type' => 'info'
             ]);
         }
-        // SELECT * FROM categories WHERE id <> $id
-            // AND (parent_id IS NULL OR parent_id <> $id)
-        // $category = News::where('id', '<>', $id)
-        //     ->where(function ($query) use ($id) {
-        //         $query->whereNull('parent_id')
-        //             ->orWhere('parent_id', '<>', $id);
-        //     })->get();
         return view('dashboard.categories.edit', compact('news'));
     }
 
@@ -102,6 +116,8 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate(News::rules());
+
         $news = News::findOrFail($id);
 
         $old_image = $news->image;
@@ -133,11 +149,25 @@ class NewsController extends Controller
      */
     public function destroy(News $news)
     {
-        $news->delete();
-        return redirect()->back()->with([
-            'message' => 'Deleted Successfully',
-            'type' => 'success'
-        ]);
+        // $news->delete();
+        // return redirect()->back()->with([
+        //     'message' => 'Deleted Successfully',
+        //     'type' => 'success'
+        // ]);
+        $isDeleted = $news->delete();
+        if ($isDeleted) {
+            return response()->json([
+                'title'=>'Success',
+                'text'=>'Admin Deleted successfully',
+                'icon'=>'success'
+            ], Response::HTTP_OK);
+        }else {
+            return response()->json([
+                'title'=>'Failed',
+                'text'=>'Failed to delete',
+                'icon'=>'error'
+            ], Response::HTTP_BAD_REQUEST);
+        }
     }
 
     public function uploadingImage(Request $request) {
@@ -147,7 +177,34 @@ class NewsController extends Controller
             'disk' => 'public'
         ]);
         return $path;
+
+        // if (!$request->hasFile('news_images')) return ;
+        // foreach($request->file('news_images') as $file) {
+        //     $path = $file->storeAs('uploads/news', rand().'_'.time().'_'.$file->getClientOriginalName(), [
+        //         'disk' => 'public'
+        //     ]);
+        //     return $path;
+        // }
+
+        // if (!$request->hasFile($image)) return ;
+
+        // // if(is_array($image))
+        // foreach($request->file($image) as $file) {
+        //     $path = $file->storeAs('uploads/news', rand().'_'.time().'_'.$file->getClientOriginalName(), [
+        //         'disk' => 'public'
+        //     ]);
+        //     if (is_array($file)){
+        //             $news = new News();
+        //             $news->images()->create([
+        //                 'news_images' => $path
+        //             ]);
+        //     }
+        //     return $path;
+        // }
+
+
     }
+
 
     public function trash() {
         $news = News::onlyTrashed()->filter(request()->query())->paginate();

@@ -201,6 +201,7 @@
             </div>
         </div>
         <!-- /main-content -->
+
         <!-- Sidebar-right-->
         <div class="sidebar sidebar-right sidebar-animate">
             <div class="panel panel-primary card mb-0 box-shadow">
@@ -214,12 +215,9 @@
                     <div class="tabs-menu ">
                         <!-- Tabs -->
                         <ul class="nav panel-tabs">
-                            <li class=""><a href="#side1" class="active" data-bs-toggle="tab"><i
-                                        class="ion ion-md-chatboxes tx-18 me-2"></i> Chat</a></li>
-                            <li><a href="#side2" data-bs-toggle="tab"><i
-                                        class="ion ion-md-notifications tx-18  me-2"></i> Notifications</a></li>
-                            <li><a href="#side3" data-bs-toggle="tab"><i class="ion ion-md-contacts tx-18 me-2"></i>
-                                    Friends</a></li>
+                            <li class=""><a href="#side1" class="active" data-bs-toggle="tab"><i class="ion ion-md-chatboxes tx-18 me-2"></i> Chat</a></li>
+                            <li><a href="#side2" data-bs-toggle="tab"><i class="ion ion-md-notifications tx-18  me-2"></i> Notifications</a></li>
+                            <li><a href="#side3" data-bs-toggle="tab"><i class="ion ion-md-contacts tx-18 me-2"></i> Friends</a></li>
                         </ul>
                     </div>
                     <div class="tab-content">
@@ -228,7 +226,7 @@
                                 <div class="">
                                     <span class="avatar bg-primary brround avatar-md">CH</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>New Websites is Created</b>
                                     </p>
@@ -245,7 +243,7 @@
                                 <div class="">
                                     <span class="avatar bg-danger brround avatar-md">N</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Prepare For the Next Project</b>
                                     </p>
@@ -262,7 +260,7 @@
                                 <div class="">
                                     <span class="avatar bg-info brround avatar-md">S</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Decide the live Discussion</b>
                                     </p>
@@ -279,7 +277,7 @@
                                 <div class="">
                                     <span class="avatar bg-warning brround avatar-md">K</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Meeting at 3:00 pm</b>
                                     </p>
@@ -296,7 +294,7 @@
                                 <div class="">
                                     <span class="avatar bg-success brround avatar-md">R</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Prepare for Presentation</b>
                                     </p>
@@ -313,7 +311,7 @@
                                 <div class="">
                                     <span class="avatar bg-pink brround avatar-md">MS</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Prepare for Presentation</b>
                                     </p>
@@ -330,7 +328,7 @@
                                 <div class="">
                                     <span class="avatar bg-purple brround avatar-md">L</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Prepare for Presentation</b>
                                     </p>
@@ -347,7 +345,7 @@
                                 <div class="">
                                     <span class="avatar bg-blue brround avatar-md">U</span>
                                 </div>
-                                <a class="wrapper w-100 ms-3" href="javascript:void(0);">
+                                <a class="wrapper w-100 ms-3" href="javascript:void(0);" >
                                     <p class="mb-0 d-flex ">
                                         <b>Prepare for Presentation</b>
                                     </p>
@@ -365,9 +363,7 @@
                             <div class="list-group list-group-flush ">
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/12.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/12.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Madeleine</strong> Hey! there I' am available....
@@ -378,8 +374,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/1.jpg') }}"></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/1.jpg"></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Anthony</strong> New product Launching...
@@ -390,9 +385,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/2.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/2.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Olivia</strong> New Schedule Realease......
@@ -403,9 +396,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/8.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/8.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Madeleine</strong> Hey! there I' am available....
@@ -416,8 +407,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/11.jpg') }}"></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/11.jpg"></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Anthony</strong> New product Launching...
@@ -428,9 +418,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/6.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/6.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Olivia</strong> New Schedule Realease......
@@ -441,9 +429,7 @@
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-lg brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/9.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-lg brround cover-image" data-bs-image-src="../assets/img/faces/9.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-3">
                                         <strong>Olivia</strong> Hey! there I' am available....
@@ -458,215 +444,156 @@
                             <div class="list-group list-group-flush ">
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/9.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/9.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Mozelle Belt</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Mozelle Belt</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/11.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/11.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Florinda Carasco</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Florinda Carasco</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/10.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/10.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Alina Bernier</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Alina Bernier</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/2.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/2.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Zula Mclaughin</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Zula Mclaughin</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/13.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/13.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Isidro Heide</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Isidro Heide</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/12.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/12.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Mozelle Belt</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Mozelle Belt</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" ><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/4.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/4.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Florinda Carasco</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Florinda Carasco</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/7.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/7.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Alina Bernier</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Alina Bernier</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" ><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/2.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/2.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Zula Mclaughin</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Zula Mclaughin</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/14.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/14.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Isidro Heide</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Isidro Heide</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" ><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/11.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/11.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Florinda Carasco</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Florinda Carasco</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/9.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/9.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Alina Bernier</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Alina Bernier</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/15.jpg') }}"><span
-                                                class="avatar-status bg-success"></span></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/15.jpg"><span class="avatar-status bg-success"></span></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Zula Mclaughin</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Zula Mclaughin</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                                 <div class="list-group-item d-flex  align-items-center">
                                     <div>
-                                        <span class="avatar avatar-md brround cover-image"
-                                            data-bs-image-src="{{ asset('assets/img/faces/4.jpg') }}"></span>
+                                        <span class="avatar avatar-md brround cover-image" data-bs-image-src="../assets/img/faces/4.jpg"></span>
                                     </div>
                                     <div class="ms-2">
-                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">
-                                            Isidro Heide</div>
+                                        <div class="fw-semibold" data-bs-toggle="modal" data-bs-target="#chatmodel">Isidro Heide</div>
                                     </div>
                                     <div class="ms-auto">
-                                        <a href="javascript:void(0);" class="btn btn-sm btn-light"
-                                            data-bs-toggle="modal" data-bs-target="#chatmodel"><i
-                                                class="fab fa-facebook-messenger"></i></a>
+                                        <a href="javascript:void(0);" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#chatmodel"><i class="fab fa-facebook-messenger"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -676,262 +603,6 @@
             </div>
         </div>
         <!--/Sidebar-right-->
-
-        <!-- Message Modal -->
-        <div class="modal fade" id="chatmodel" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-right chatbox" role="document">
-                <div class="modal-content chat border-0">
-                    <div class="card overflow-hidden mb-0 border-0">
-                        <!-- action-header -->
-                        <div class="action-header clearfix">
-                            <div class="float-start hidden-xs d-flex ms-2">
-                                <div class="img_cont me-3">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}" class="rounded-circle user_img"
-                                        alt="img">
-                                </div>
-                                <div class="align-items-center mt-2">
-                                    <h4 class="text-white mb-0 fw-semibold">Daneil Scott</h4>
-                                    <span class="dot-label bg-success"></span><span
-                                        class="me-3 text-white">online</span>
-                                </div>
-                            </div>
-                            <ul class="ah-actions actions align-items-center">
-                                <li class="call-icon">
-                                    <a href="" class="d-done d-md-block phone-button" data-bs-toggle="modal"
-                                        data-bs-target="#audiomodal">
-                                        <i class="si si-phone"></i>
-                                    </a>
-                                </li>
-                                <li class="video-icon">
-                                    <a href="" class="d-done d-md-block phone-button" data-bs-toggle="modal"
-                                        data-bs-target="#videomodal">
-                                        <i class="si si-camrecorder"></i>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="" data-bs-toggle="dropdown" aria-expanded="true">
-                                        <i class="si si-options-vertical"></i>
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end">
-                                        <li><i class="fa fa-user-circle"></i> View profile</li>
-                                        <li><i class="fa fa-users"></i>Add friends</li>
-                                        <li><i class="fa fa-plus"></i> Add to group</li>
-                                        <li><i class="fa fa-ban"></i> Block</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="" class="" data-bs-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true"><i class="si si-close text-white"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- action-header end -->
-
-                        <!-- msg_card_body -->
-                        <div class="card-body msg_card_body">
-                            <div class="chat-box-single-line">
-                                <abbr class="timestamp">February 1st, 2019</abbr>
-                            </div>
-                            <div class="d-flex justify-content-start">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    Hi, how are you Jenna Side?
-                                    <span class="msg_time">8:40 AM, Today</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end ">
-                                <div class="msg_cotainer_send">
-                                    Hi Connor Paige i am good tnx how about you?
-                                    <span class="msg_time_send">8:55 AM, Today</span>
-                                </div>
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/9.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start ">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    I am good too, thank you for your chat template
-                                    <span class="msg_time">9:00 AM, Today</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end ">
-                                <div class="msg_cotainer_send">
-                                    You welcome Connor Paige
-                                    <span class="msg_time_send">9:05 AM, Today</span>
-                                </div>
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/9.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start ">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    Yo, Can you update Views?
-                                    <span class="msg_time">9:07 AM, Today</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end mb-4">
-                                <div class="msg_cotainer_send">
-                                    But I must explain to you how all this mistaken born and I will give
-                                    <span class="msg_time_send">9:10 AM, Today</span>
-                                </div>
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/9.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start ">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    Yo, Can you update Views?
-                                    <span class="msg_time">9:07 AM, Today</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end mb-4">
-                                <div class="msg_cotainer_send">
-                                    But I must explain to you how all this mistaken born and I will give
-                                    <span class="msg_time_send">9:10 AM, Today</span>
-                                </div>
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/9.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start ">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    Yo, Can you update Views?
-                                    <span class="msg_time">9:07 AM, Today</span>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end mb-4">
-                                <div class="msg_cotainer_send">
-                                    But I must explain to you how all this mistaken born and I will give
-                                    <span class="msg_time_send">9:10 AM, Today</span>
-                                </div>
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/9.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-start">
-                                <div class="img_cont_msg">
-                                    <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                                        class="rounded-circle user_img_msg" alt="img">
-                                </div>
-                                <div class="msg_cotainer">
-                                    Okay Bye, text you later..
-                                    <span class="msg_time">9:12 AM, Today</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- msg_card_body end -->
-                        <!-- card-footer -->
-                        <div class="card-footer">
-                            <div class="msb-reply d-flex">
-                                <div class="input-group">
-                                    <input type="text" class="form-control " placeholder="Typing....">
-                                    <div class="input-group-text bg-transparent border-0 p-0">
-                                        <button type="button" class="btn btn-primary ">
-                                            <i class="far fa-paper-plane" aria-hidden="true"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- card-footer end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Video Modal -->
-        <div id="videomodal" class="modal fade">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content bg-dark border-0 text-white">
-                    <div class="modal-body mx-auto text-center p-7">
-                        <h5>Valex Video call</h5>
-                        <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                            class="rounded-circle user-img-circle h-8 w-8 mt-4 mb-3" alt="img">
-                        <h4 class="mb-1 fw-semibold">Daneil Scott</h4>
-                        <h6>Calling...</h6>
-                        <div class="mt-5">
-                            <div class="row">
-                                <div class="col-4">
-                                    <a class="icon icon-shape rounded-circle mb-0 me-3" href="javascript:void(0);">
-                                        <i class="fas fa-video-slash"></i>
-                                    </a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="icon icon-shape rounded-circle text-white mb-0 me-3"
-                                        href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close">
-                                        <i class="fas fa-phone bg-danger text-white"></i>
-                                    </a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="icon icon-shape rounded-circle mb-0 me-3" href="javascript:void(0);">
-                                        <i class="fas fa-microphone-slash"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- modal-body -->
-                </div>
-            </div><!-- modal-dialog -->
-        </div><!-- modal -->
-
-        <!-- Audio Modal -->
-        <div id="audiomodal" class="modal fade">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content border-0">
-                    <div class="modal-body mx-auto text-center p-7">
-                        <h5>Valex Voice call</h5>
-                        <img src="{{ asset('assets/img/faces/6.jpg') }}"
-                            class="rounded-circle user-img-circle h-8 w-8 mt-4 mb-3" alt="img">
-                        <h4 class="mb-1  fw-semibold">Daneil Scott</h4>
-                        <h6>Calling...</h6>
-                        <div class="mt-5">
-                            <div class="row">
-                                <div class="col-4">
-                                    <a class="icon icon-shape rounded-circle mb-0 me-3" href="javascript:void(0);">
-                                        <i class="fas fa-volume-up bg-light text-dark"></i>
-                                    </a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="icon icon-shape rounded-circle text-white mb-0 me-3"
-                                        href="javascript:void(0);" data-bs-dismiss="modal" aria-label="Close">
-                                        <i class="fas fa-phone text-white bg-success"></i>
-                                    </a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="icon icon-shape  rounded-circle mb-0 me-3" href="javascript:void(0);">
-                                        <i class="fas fa-microphone-slash bg-light text-dark"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- modal-body -->
-                </div>
-            </div><!-- modal-dialog -->
-        </div><!-- modal -->
 
         <!-- Footer opened -->
         <div class="main-footer ht-45">
@@ -1012,6 +683,21 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- DATA TABLE JS -->
+    <script src="{{ asset('assets/plugins/datatable/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/dataTables.bootstrap5.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/dataTables.buttons.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/buttons.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/jszip.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/pdfmake/pdfmake.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/pdfmake/vfs_fonts.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/buttons.html5.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/buttons.print.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/js/buttons.colVis.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/dataTables.responsive.min.js') }}"></script>
+    <script src="{{ asset('assets/plugins/datatable/responsive.bootstrap5.min.js') }}"></script>
+    <script src="{{ asset('assets/js/table-data.js') }}"></script>
     <x-alert />
 
     @stack('scripts')

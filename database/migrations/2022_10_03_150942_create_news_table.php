@@ -18,10 +18,12 @@ return new class extends Migration
             $table->foreignId('category_id')
                 ->nullable()
                 ->constrained('categories')
-                ->nullOnDelete();
+                ->cascadeOnDelete();
             $table->string('title');
+            $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->string('image')->nullable();
+            $table->enum('status', ['active', 'archive'])->default('active');
             $table->timestamps();
             $table->softDeletes();
         });

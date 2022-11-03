@@ -20,6 +20,9 @@
                     <x-form.input name="name" placeholder="Name" :value="request('name')" />
                     <select name="status" class="form-select mx-3">
                         <option value="">All</option>
+                        {{-- @foreach ($news->category as $row)
+                            <option value="{{ $row->id }}">{{ $row->name }}</option>
+                        @endforeach --}}
                         <option value="active" @selected(request('status') == 'active')>Active</option>
                         <option value="archived" @selected(request('status') == 'archived')>Archived</option>
                     </select>
@@ -27,7 +30,7 @@
                 </form>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                        <table class="table table-bordered text-nowrap border-bottom" id="responsive-datatable">
                             <thead>
                                 <tr>
                                     <th class="wd-10p"></th>
@@ -42,8 +45,8 @@
                                 @foreach ($news as $news)
                                     <tr>
                                         <td>
-                                            <img src="{{ asset('storage/' . $news->image) }}" alt=""
-                                                height="50px" width="70px" class="rounded">
+                                            <img src="{{ asset('storage/' . $news->image) }}" alt="" height="50px"
+                                                width="70px" class="rounded">
                                         </td>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $news->title }}</td>
@@ -51,15 +54,13 @@
                                         <td>{{ $news->created_at }}</td>
                                         <td name="bstable-actions">
                                             <div class="btn-list d-flex">
-                                                <a id="bEdit"
-                                                    href="{{ route('dashboard.news.edit', $news->id) }}"
+                                                <a id="bEdit" href="{{ route('dashboard.news.edit', $news->id) }}"
                                                     class="btn btn-sm btn-primary mx-3">
                                                     <span class="fe fe-edit"> </span>
                                                 </a>
                                                 <form action="{{ route('dashboard.news.destroy', $news->id) }}"
                                                     method="POST">
                                                     @csrf
-                                                    {{-- method spoofing --}}
                                                     @method('DELETE')
                                                     <button id="bDel" type="submit" class="btn btn-sm btn-danger">
                                                         <span class="fe fe-trash-2"> </span>
@@ -78,19 +79,3 @@
         </div>
     </div>
 @endsection
-@push('scripts')
-    <!-- DATA TABLE JS -->
-    <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-    <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-    <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-    <script src="../assets/js/table-data.js"></script>
-@endpush

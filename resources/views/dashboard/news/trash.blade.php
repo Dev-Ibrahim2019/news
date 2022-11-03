@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Trash Categories')
+@section('title', 'Trash News')
 @section('breadcrumb')
     @parent
     <span class="text-muted mt-1 tx-13 ms-2 mb-0">/ Category</span>
@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h3 class="card-title">Category Trashed</h3>
-                    <a class="btn btn-primary text-light" href="{{ route('dashboard.categories.index') }}">Back</a>
+                    <a class="btn btn-primary text-light" href="{{ route('dashboard.news.index') }}">Back</a>
                 </div>
                 <form action="{{ URL::current() }}" method="GET" class="d-flex justify-content-betweem m-4">
                     <x-form.input name="name" placeholder="Name" :value="request('name')" />
@@ -83,19 +83,3 @@
         </div>
     </div>
 @endsection
-@push('scripts')
-    <!-- DATA TABLE JS -->
-    <script src="../assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
-    <script src="../assets/plugins/datatable/js/dataTables.bootstrap5.js"></script>
-    <script src="../assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.bootstrap5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/jszip.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/pdfmake.min.js"></script>
-    <script src="../assets/plugins/datatable/pdfmake/vfs_fonts.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.html5.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.print.min.js"></script>
-    <script src="../assets/plugins/datatable/js/buttons.colVis.min.js"></script>
-    <script src="../assets/plugins/datatable/dataTables.responsive.min.js"></script>
-    <script src="../assets/plugins/datatable/responsive.bootstrap5.min.js"></script>
-    <script src="../assets/js/table-data.js"></script>
-@endpush

@@ -22,16 +22,6 @@ class CategoriesController extends Controller
     public function index()
     {
         $request = request();
-
-        // $categories = Category::leftJoin('categories as parents', 'parents.id', '=', 'categories.parent_id')
-        //     ->select([
-        //         'categories.*',
-        //         'parents.name as parent_name'
-        //     ])
-        //     ->filter($request->query())
-        //     ->orderBy('categories.name')
-        //     ->paginate();
-
         $categories = Category::filter($request->query())->orderBy('categories.name')->paginate();
         return view('dashboard.categories.index', compact('categories'));
     }
@@ -41,11 +31,9 @@ class CategoriesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Category $category)
     {
-        $parents = Category::all();
-        $category = new Category();
-        return view('dashboard.categories.create', compact('parents', 'category'));
+        return view('dashboard.categories.create', compact('category'));
     }
 
     /**
@@ -64,10 +52,8 @@ class CategoriesController extends Controller
 
         $data['image'] = $this->uploadImage($request);
 
-        // Mass assignment
         Category::create($data);
 
-        //PRG (POST REDIRET GET)
         return Redirect::route('dashboard.categories.index')->with([
             'message' => 'Category Created.',
             'type' => 'success'
@@ -101,14 +87,7 @@ class CategoriesController extends Controller
                 'type' => 'info'
             ]);
         }
-        // SELECT * FROM categories WHERE id <> $id
-            // AND (parent_id IS NULL OR parent_id <> $id)
-        $parents = Category::where('id', '<>', $id)
-            ->where(function ($query) use ($id) {
-                $query->whereNull('parent_id')
-                    ->orWhere('parent_id', '<>', $id);
-            })->get();
-        return view('dashboard.categories.edit', compact('category', 'parents'));
+        return view('dashboard.categories.edit', compact('category'));
     }
 
     /**

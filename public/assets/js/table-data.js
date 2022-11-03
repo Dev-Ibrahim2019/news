@@ -5,7 +5,8 @@ $(function(e) {
         language: {
             searchPlaceholder: 'Search...',
             sSearch: '',
-        }
+        },
+        "bDestroy": true
     });
 
 
@@ -15,7 +16,8 @@ $(function(e) {
             searchPlaceholder: 'Search...',
             scrollX: "100%",
             sSearch: '',
-        }
+        },
+        "bDestroy": true
     });
 
     //______File-Export Data Table
@@ -56,8 +58,8 @@ $(function(e) {
 			lengthMenu: '_MENU_ items/page',
 		}
 	});
-	
-	
+
+
     $('#example3').DataTable( {
         responsive: {
             details: {
@@ -74,7 +76,7 @@ $(function(e) {
         }
     } );
 
-    //______Select2 
+    //______Select2
 	$('.select2').select2({
 		placeholder: 'Choose one',
 		searchInputPlaceholder: 'Search'
