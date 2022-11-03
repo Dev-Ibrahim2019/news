@@ -1,15 +1,6 @@
 <div class="form-group">
     <x-form.input label="Category Name" type="text" name="name" id="name" :value="$category->name" role="input" />
 </div>
-{{-- <div class="form-group">
-    <label for="name">Category Parent</label>
-    <select name="parent_id" class="form-control form-select">
-        <option value="">Primary Category</option>
-        @foreach ($parents as $parent)
-            <option value="{{ $parent->id }}" @selected(old('parent_id', $category->parent_id) == $parent->id)>{{ $parent->name }}</option>
-        @endforeach
-    </select>
-</div> --}}
 <div class="form-group">
     <x-form.textarea label="Description" name="description" id="desc" :value="$category->description" />
 </div>

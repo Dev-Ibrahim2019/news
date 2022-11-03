@@ -1,8 +1,9 @@
 <div class="form-group">
-    <x-form.label id="image">Main Image </x-form.label>
+    <x-form.label id="image">Image</x-form.label>
     <x-form.input type="file" name="image" id="image" accept="image/*" />
     @if ($news->image)
-        <img src="{{ asset('storage/' . $news->image) }}" alt="" width="100" height="100" class="m-3">
+        <img src="{{ asset('storage/' . $news->image) }}" alt="" width="100" height="100"
+            class="m-3">
     @endif
 </div>
 <div class="form-group">
@@ -23,12 +24,7 @@
 <div class="form-group">
     <x-form.label id="demo">Content Images </x-form.label>
     <div>
-        <form action="" class="dropzone">
-            <x-form.input type="file" id="images" name="news_images[]" data-height="200" multiple="" />
-        </form>
-
-        {{-- <x-form.input type="file" name="news_images[]" id="demo" class="dropify"
-            accept=".jpg, .png, image/jpeg, image/png, html, zip, css,js" multiple="" class="ff_fileupload_hidden" /> --}}
+        <x-form.input type="file" id="images" name="news_images[]" data-height="200" multiple="" />
     </div>
 </div>
 <div class="form-group">
@@ -37,35 +33,7 @@
 </div>
 <div class="form-group mb-0 mt-3 justify-content-end">
     <div>
-        <button type="submit" class="btn btn-primary">save</button>
-        {{-- <sub type="submit" class="btn btn-primary">{{ $button_label ?? 'Save' }}</sub> --}}
-        <a href="{{ route('dashboard.news.index') }}" class="btn btn-secondary ms-4">back</a>
+        <button type="submit" class="btn btn-primary">{{ $button_label ?? 'Save' }}</button>
+        <a href="{{ route('dashboard.categories.index') }}" class="btn btn-secondary ms-4">back</a>
     </div>
 </div>
-
-
-{{-- @push('styles')
-    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
-@endpush --}}
-
-@push('scripts')
-    <!--Internal Fileuploads js-->
-    <script src="{{ asset('assets/plugins/fileuploads/js/fileupload.js') }}"></script>
-    <script src="{{ asset('assets/plugins/fileuploads/js/file-upload.js') }}"></script>
-
-    <!--Internal Fancy uploader js-->
-    <script src="{{ asset('assets/plugins/fancyuploder/jquery.ui.widget.js') }}"></script>
-    <script src="{{ asset('assets/plugins/fancyuploder/jquery.fileupload.js') }}"></script>
-    <script src="{{ asset('assets/plugins/fancyuploder/jquery.iframe-transport.js') }}"></script>
-    <script src="{{ asset('assets/plugins/fancyuploder/jquery.fancy-fileupload.js') }}"></script>
-    <script src="{{ asset('assets/plugins/fancyuploder/fancy-uploader.js') }}"></script>
-
-    {{-- <script>
-        const inputElement = document.querySelector('input[id="images"]');
-        const pond = FilePond.create(inputElement);
-        FilePond.setOptions({
-            server: 'uploads/'
-        });
-    </script>
-    <script src="https://unpkg.com/filepond/dist/filepond.js"></script> --}}
-@endpush
